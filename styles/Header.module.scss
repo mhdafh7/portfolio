@@ -1,0 +1,29 @@
+@import "colors";
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-height: 10vw;
+    padding: 5% 10%;
+}
+.logo {
+    display: flex;
+}
+.navContainer {
+    .navList {
+        list-style: none;
+        margin: 0;
+        display: grid;
+        grid-template-rows: auto;
+        row-gap: 0.5rem;
+        .navItem {
+            font-family: "Rota";
+            font-weight: 200;
+            font-size: clamp(0.45rem, 0.28rem + 0.7vw, 1rem);
+            letter-spacing: 1.5px;
+            text-align: right;
+            display: block;
+        }
+    }
+}

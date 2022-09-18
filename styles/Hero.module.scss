@@ -1,0 +1,25 @@
+@import "colors";
+.container {
+    max-width: 52vw;
+    .title {
+        margin: 0;
+        line-height: 1.15;
+        font-size: clamp(3rem, 2.812rem + 3vw, 8rem);
+        font-weight: bold;
+    }
+
+    .title,
+    .description {
+        text-align: left;
+        color: $secondary;
+    }
+
+    .description {
+        margin: 0;
+        margin-bottom: 2vw;
+        line-height: 1.15;
+        letter-spacing: 1px;
+        font-size: clamp(0.7rem, 0.5rem + 0.7vw, 1.3rem);
+        font-weight: 200;
+    }
+}

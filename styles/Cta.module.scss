@@ -1,0 +1,10 @@
+@import "colors";
+.container {
+    width: clamp(10rem, 0.3rem + 0.7vw, 14rem);
+    height: clamp(10rem, 0.3rem + 0.7vw, 14rem);
+    background-color: $secondary;
+    border-radius: 37%;
+    rotate: 45deg;
+    position: absolute;
+    right: 12%;
+}

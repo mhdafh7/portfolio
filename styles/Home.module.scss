@@ -1,0 +1,27 @@
+@import "colors";
+.container {
+    max-width: 2160px;
+    margin: auto;
+    background-color: $primary;
+    overflow: hidden;
+    border: solid white 3px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    .main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+        padding: 0% 10%;
+        height: 80%;
+    }
+}
+
+
+@media (max-width: 600px) {
+}
+
+@media (prefers-color-scheme: dark) {
+}
