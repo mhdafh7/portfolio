@@ -1,7 +1,7 @@
 import Head from "next/head"
 import styles from "../styles/Home.module.scss"
 import Header from "../components/Header"
-// import Navbar from "../components/Navbar"
+import Navbar from "../components/Navbar"
 import Hero from "../components/Hero"
 import HeroSvg from "../components/HeroSvg"
 
@@ -25,8 +25,8 @@ export default function Home() {
             <main className={styles.main}>
                 <HeroSvg />
                 <Hero />
+                <Navbar />
             </main>
-            {/* <Navbar /> */}
 
             {/* <footer className={styles.footer}></footer> */}
         </div>

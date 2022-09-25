@@ -1,15 +1,33 @@
 @import "./colors";
 
 .container {
-  margin-top: 20vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    padding: 5% 10%;
+    margin-left: 0.7rem;
+
     ul {
+        width: clamp(424px,60%,29vw);
         list-style: none;
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        .navItem{
+          font-weight: 300;
+          cursor: pointer;
+        }
+        .inactive{
+          text-decoration: line-through;
+          opacity: 0.5;
+        }
     }
 
-    @media (max-width: 992px){
-      display: none;
+    @media (max-width: 992px) {
+        display: none;
     }
 }

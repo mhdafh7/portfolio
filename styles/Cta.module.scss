@@ -1,11 +1,13 @@
 @import "colors";
 
 .container {
-    width: clamp(6rem, 5rem + 12vw, 14rem);
-    height: clamp(1.4rem, 2rem + 4vw, 3.38rem);
+    height: clamp(55px, 55px + 2vw, 65px);
+    width: clamp(150px, 100px + 11vw, 250px);
     border-radius: 15px;
+    padding: 16px 32px;
     margin: 0.5rem;
-    // cursor: pointer;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
 
     .wrapper {
         display: flex;
@@ -13,24 +15,33 @@
         justify-content: center;
         height: 100%;
         width: 100%;
+        margin: 0;
+        padding: 0;
 
-        h3 {
-            margin-bottom: -0.5vh;
-            line-height: 1.6;
-            font-weight: bolder;
-            font-size: clamp(0.8rem, 0.3rem + 0.7vw, 1.1rem);
+        div {
+            transition: all 0.15s ease-in;
+            span {
+                margin-bottom: -0.5vh;
+                line-height: 1.6;
+                font-weight: bolder;
+                font-size: clamp(0.8rem, 0.3rem + 0.7vw, 1.1rem);
+            }
         }
+    }
+    &:hover {
+        translate: 0 -5px;
+        box-shadow: 0 4px 20px -2px #{rgba(#d6d6d6, 0.52)};
 
-        .icon {
-            height: clamp(1.3rem, 1rem + 1vw, 2rem);
-            margin-left: 0.4rem;
+        div {
+            translate: 2px 0;
         }
     }
 }
 .fill {
     background-color: $secondary;
+    border: 3px $secondary solid;
 
-    h3,
+    span,
     .icon {
         color: $primary;
     }
@@ -39,11 +50,12 @@
     background-color: $primary;
     border: 3px $secondary solid;
 
-    h3,
+    span,
     .icon {
         color: $secondary;
     }
 }
+
 // @media (min-width: 576px) {
 // }
 
