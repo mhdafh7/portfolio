@@ -21,6 +21,7 @@ export default function Custom404() {
                         justify-content: center;
                         flex-direction: column;
                         padding: 2rem;
+                        margin: auto;
                     }
                     h1 {
                         font-size: 2rem;
