@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "devh": "PORT=5000 next dev -H 192.168.1.125 ",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -11,6 +12,7 @@
   "dependencies": {
     "next": "12.3.0",
     "react": "18.2.0",
+    "react-bootstrap-icons": "^1.8.4",
     "react-dom": "18.2.0"
   },
   "devDependencies": {

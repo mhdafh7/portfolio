@@ -1,25 +1,76 @@
 @import "colors";
+@import "fonts";
 .container {
-    max-width: 52vw;
-    .title {
-        margin: 0;
-        line-height: 1.15;
-        font-size: clamp(3rem, 2.812rem + 3vw, 8rem);
-        font-weight: bold;
-    }
+    width: 100%;
+    min-height: 60%;
+    margin-bottom: 25%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    .title,
-    .description {
-        text-align: left;
-        color: $secondary;
-    }
+    .textAndNav {
+        max-width: 60%;
+        .title {
+            margin: 0;
+            margin-bottom: 3vh;
+            line-height: 1.09;
+            font-size: clamp(2rem, 1.8rem + 7vw, 5rem);
+            letter-spacing: 0.03em;
+        }
 
-    .description {
-        margin: 0;
-        margin-bottom: 2vw;
-        line-height: 1.15;
-        letter-spacing: 1px;
-        font-size: clamp(0.7rem, 0.5rem + 0.7vw, 1.3rem);
-        font-weight: 200;
+        .title,
+        .description {
+            text-align: left;
+            color: $secondary;
+        }
+
+        .description {
+            margin: 0;
+            margin-bottom: 5vh;
+            line-height: 93.04%;
+            letter-spacing: 0.04em;
+            font-size: clamp(0.7rem, 0.5rem + 1vw, 1.5rem);
+            font-weight: 200;
+
+            &:last-of-type {
+                letter-spacing: 0.05em;
+                font-weight: light;
+                font-size: clamp(0.5rem, 0.3rem + 1.3vw, 1.2rem);
+            }
+        }
+    }
+    .ctaContainer{
+        padding: 0;
+        position: absolute;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        justify-content: space-evenly;
+        .textWrapper {
+            max-width: 90%;
+            .title,
+            .description {
+                text-align: center;
+            }
+            .title{
+                margin-bottom: 2vh;
+            }
+            .description:last-of-type{
+                margin-bottom: 7vh;
+            }
+        }
+        .ctaContainer{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
