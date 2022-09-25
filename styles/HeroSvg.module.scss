@@ -1,0 +1,47 @@
+.heroImg {
+    margin: auto;
+    width: clamp(205px, 70%, 100%);
+    height: clamp(139px, 60.146%, 100%);
+
+    svg {
+        height: 100%;
+        width: 100%;
+    }
+}
+.circle1,
+.circle2,
+.circle3 {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle1 {
+    height: 172vh;
+    width: 172vh;
+    top: 55%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.007);
+    border-radius: 50%;
+    position: absolute;
+    .circle2 {
+        background-color: rgba(255, 255, 255, 0.015);
+        height: 75%;
+        width: 75%;
+    }
+    .circle3 {
+        background-color: rgba(255, 255, 255, 0.02);
+        height: 75%;
+        width: 75%;
+    }
+}
+@media (max-width: 992px) {
+    .circle1 {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100vh;
+        width: 100vh;
+    }
+}
