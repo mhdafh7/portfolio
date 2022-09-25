@@ -7,24 +7,35 @@
     min-height: 10vw;
     padding: 10vh 10%;
     margin: auto;
+    z-index: 99;
 
     .logo {
         display: flex;
     }
-    .navContainer {
-        .navList {
+    .socialContainer {
+        .socialList {
             list-style: none;
             margin: 0;
             display: grid;
             grid-template-columns: auto;
             row-gap: 0.5rem;
-            .navItem {
+
+            a {
+                cursor: pointer;
+            }
+            .socialItem {
+                cursor: pointer;
                 font-family: "Rota";
                 font-weight: 200;
                 font-size: clamp(0.45rem, 0.28rem + 0.7vw, 1rem);
                 letter-spacing: 1.5px;
                 text-align: right;
                 display: block;
+                transition: all 0.2s ease;
+
+                &:hover{
+                    text-decoration: underline;
+                }
             }
         }
     }

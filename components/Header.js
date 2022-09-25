@@ -19,12 +19,29 @@ const Header = () => {
                         </svg>
                     </a>
                 </div>
-                <div className={styles.navContainer}>
-                    <ul className={styles.navList}>
-                        <li className={styles.navItem}>Linkedin</li>
-                        <li className={styles.navItem}>Github</li>
-                        <li className={styles.navItem}>Dribble</li>
-                        <li className={styles.navItem}>Resume</li>
+                <div className={styles.socialContainer}>
+                    <ul className={styles.socialList}>
+                        <a
+                            href="https://www.linkedin.com/in/muhammed-aflah"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <li className={styles.socialItem}>Linkedin</li>
+                        </a>
+                        <a
+                            href="https://github.com/mhdafh7"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <li className={styles.socialItem}>Github</li>
+                        </a>
+                        <a
+                            href="https://dribbble.com/mhdafh"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <li className={styles.socialItem}>Dribble</li>
+                        </a>
                     </ul>
                 </div>
             </div>
