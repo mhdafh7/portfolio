@@ -9,7 +9,7 @@ export default function Custom404() {
                 <Svg />
             </div>
             <Link href="/">
-                <h2>&#60;&#92; Go back</h2>
+                <h2>&#60;&#92; Back to home</h2>
             </Link>
             <style jsx>
                 {`

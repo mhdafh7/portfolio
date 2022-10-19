@@ -1,42 +1,28 @@
 @import "colors";
 
 .container {
-    width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    min-height: 10vw;
-    padding: 10vh 10%;
-    margin: auto;
+    padding: 1.2rem 2.5rem;
+    height: 100px;
+    margin: 2rem 8vw;
+    border-radius: 52px;
+    backdrop-filter: blur(20px);
     z-index: 99;
+    background-color: rgba(255, 255, 255, 0.43);
 
     .logo {
         display: flex;
-    }
-    .socialContainer {
-        .socialList {
-            list-style: none;
-            margin: 0;
-            display: grid;
-            grid-template-columns: auto;
-            row-gap: 0.5rem;
 
-            a {
-                cursor: pointer;
-            }
-            .socialItem {
-                cursor: pointer;
-                font-family: "Rota";
-                font-weight: 200;
-                font-size: clamp(0.45rem, 0.28rem + 0.7vw, 1rem);
-                letter-spacing: 1.5px;
-                text-align: right;
-                display: block;
-                transition: all 0.2s ease;
-
-                &:hover{
-                    text-decoration: underline;
-                }
-            }
+        h3 {
+            text-transform: uppercase;
+            line-height: 109%;
+            letter-spacing: 0.03em;
         }
+    }
+
+    @media (max-width: 992px){
+        
     }
 }

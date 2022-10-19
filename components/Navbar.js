@@ -3,26 +3,29 @@ import Link from "next/link"
 
 const Navbar = () => {
     return (
-        <div className={styles.container}>
-            <ul>
-                <li className={styles.navItem}>Home</li>
-                <Link href="/404">
-                    <li className={`${styles.navItem} ${styles.inactive}`}>
-                        About
-                    </li>
-                </Link>
-                <Link href="/404">
-                    <li className={`${styles.navItem} ${styles.inactive}`}>
-                        Projects
-                    </li>
-                </Link>
-                <Link href="/404">
-                    <li className={`${styles.navItem} ${styles.inactive}`}>
-                        Contact
-                    </li>
-                </Link>
-            </ul>
-        </div>
+        <>
+            <div className={styles.container}>
+                <ul>
+                    <Link href="/404">
+                        <li className={styles.navItem}>Projects</li>
+                    </Link>
+                    <Link href="/404">
+                        <li className={styles.navItem}>
+                            About
+                        </li>
+                    </Link>
+                    <Link href="/404">
+                        <li className={`${styles.navItem} ${styles.contact}`}>
+                            Contact
+                        </li>
+                    </Link>
+                </ul>
+            </div>
+            <div className={styles.mobileContainer}>
+                <div className={styles.line}></div>
+                <div className={styles.line}></div>
+            </div>
+        </>
     )
 }
 export default Navbar
