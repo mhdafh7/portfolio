@@ -1,28 +1,25 @@
 @import "colors";
 @import "fonts";
 .container {
-    width: 100%;
-    min-height: 60%;
-    margin-bottom: 3rem;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    margin: auto;
+    margin-left: 2.5rem;
+    padding-top: 14rem;
     .title {
         text-transform: uppercase;
-        margin: 0;
-        margin-bottom: 3vh;
         line-height: 1.39;
-        font-size: clamp(2rem, 1.8rem + 7vw, 5rem);
+        font-size: clamp(1rem, 0.8rem + 9vw, 5rem);
         letter-spacing: 0.03em;
         text-align: left;
         color: $secondary;
         font-weight: bold;
-        bottom: 0d;
     }
 }
 @media (max-width: 992px) {
     .container {
-        
+       margin: auto 1rem; 
     }
 }

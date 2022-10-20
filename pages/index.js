@@ -2,6 +2,7 @@ import Head from "next/head"
 import styles from "../styles/Home.module.scss"
 import Header from "../components/Header"
 import Hero from "../components/Hero"
+import About from "../components/About"
 
 export default function Home() {
     return (
@@ -16,11 +17,15 @@ export default function Home() {
                     name="viewport"
                     content="width=device-width, initial-scale=1, minimum-scale=1"
                 ></meta>
-                <link rel="icon" href="/favicon.ico" />
+                <link
+                    rel="icon"
+                    href="/favicon.ico"
+                />
             </Head>
             <Header />
             <main className={styles.main}>
                 <Hero />
+                <About />
             </main>
         </div>
     )
