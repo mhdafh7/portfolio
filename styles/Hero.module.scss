@@ -4,21 +4,46 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: auto;
-    padding-top: 14rem;
+    padding-top: 7rem;
+    position: relative;
+
+    .blob {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 40vw;
+        width: 40vw;
+        max-width: 650px;
+        max-height: 650px;
+        background-color: $blob-bg;
+        border-radius: 50%;
+    }
     .title {
+        position: relative;
         text-transform: uppercase;
         line-height: 1.39;
-        font-size: clamp(1rem, 0.8rem + 9vw, 5rem);
+        font-size: clamp(1rem, 0.8rem + 7vw, 6rem);
         letter-spacing: 0.03em;
-        text-align: left;
+        text-align: center;
         color: $secondary;
         font-weight: bolder;
+        span {
+            color: $accent-dark;
+            // font-family: 'Caveat', sans-serif;
+            // font-style: italic;
+        }
     }
 }
 @media (max-width: 992px) {
     .container {
-       margin: auto 1rem; 
+        margin: auto 1rem;
+        padding-top: 5rem;
+
+        .title {
+            text-align: center;
+        }
     }
 }
