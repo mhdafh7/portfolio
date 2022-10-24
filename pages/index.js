@@ -3,6 +3,7 @@ import styles from "../styles/Home.module.scss"
 import Header from "../components/Header"
 import Hero from "../components/Hero"
 import About from "../components/About"
+import Projects from "../components/Projects"
 
 export default function Home() {
     return (
@@ -26,6 +27,7 @@ export default function Home() {
             <main className={styles.main}>
                 <Hero />
                 <About />
+                <Projects />
             </main>
         </div>
     )

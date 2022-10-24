@@ -6,14 +6,14 @@ const About = () => {
           <div className={styles.container}>
               <div className={styles.title}>
                   Web <br />
-                  Craftsman
+                  Craftsman<span>.</span>
               </div>
               <div className={styles.desc}>
                 <p>
                   I&apos;m Muhammed Aflah, <br />
                   I make pixel perfect interfaces <br />
                   and write clean server side code <br />
-                  for the <span>Web</span>.
+                  for the <span>Web.</span>
                 </p>
               </div>
           </div>
