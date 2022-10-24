@@ -8,7 +8,7 @@ const Hero = () => {
             <h1 className={styles.title}>
                 I make things
                 <br />
-                for <span>web.</span>
+                for the <span>web.</span>
             </h1>
         </div>
     )

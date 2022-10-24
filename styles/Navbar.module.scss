@@ -32,22 +32,24 @@
     display: none;
 
     @media (max-width: 992px) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 7px;
-      flex-direction: column;
-      height: 60px;
-      width: 60px;
-      background-color: $accent;
-      border-radius: 50%;
-      cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        flex-direction: column;
+        height: clamp(35px, 7vw, 60px);
+        width: clamp(35px, 7vw, 60px);
+        background-color: $accent;
+        border-radius: 50%;
+        cursor: pointer;
 
-      .line{
-        content: "";
-        background-color: $secondary;
-        width: 60%;
-        height: 2px;
-      }
+        .line {
+            content: "";
+            background-color: $secondary;
+            width: 60%;
+            height: 5%;
+            border-radius: 30px;
+            opacity: 0.7;
+        }
     }
 }

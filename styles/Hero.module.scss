@@ -14,26 +14,23 @@
         top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
-        height: 40vw;
-        width: 40vw;
-        max-width: 650px;
-        max-height: 650px;
+        height: clamp(420px, 60vh, 90vw);
+        width: clamp(420px, 60vh, 90vw);
         background-color: $blob-bg;
         border-radius: 50%;
+        opacity: 0.4;
     }
     .title {
         position: relative;
         text-transform: uppercase;
         line-height: 1.39;
-        font-size: clamp(1rem, 0.8rem + 7vw, 6rem);
+        font-size: clamp(2rem, 1.8rem + 7vw, 6rem);
         letter-spacing: 0.03em;
         text-align: center;
         color: $secondary;
         font-weight: bolder;
         span {
             color: $accent-dark;
-            // font-family: 'Caveat', sans-serif;
-            // font-style: italic;
         }
     }
 }
@@ -43,6 +40,7 @@
         padding-top: 5rem;
 
         .title {
+            width: 90%;
             text-align: center;
         }
     }

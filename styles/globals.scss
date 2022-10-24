@@ -2,6 +2,7 @@
 @import "fonts";
 :root {
     background: $primary;
+    min-width: 360px;
 }
 * {
     padding: 0;

@@ -17,6 +17,15 @@
             padding: 0 2rem;
         }
     }
+    @media (max-width:576px) {
+        &{
+            padding: 0;
+
+            .main{
+                padding: 0 1.5rem;
+            }
+        }
+    }
 }
 
 // @media (min-width: 576px) {  }

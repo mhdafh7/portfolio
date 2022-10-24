@@ -7,8 +7,13 @@ const ProjectItem = ({ title, img, tags }) => {
             <div className={styles.about}>
                 <h3 className={styles.title}>{title}</h3>
                 <div className={styles.tags}>
-                    {tags.map(tag => (
-                        <h4 key={tag} className={styles.tag}>{tag}</h4>
+                    {tags.map((tag) => (
+                        <div
+                            key={tag}
+                            className={styles.tag}
+                        >
+                            <h4>{tag}</h4>
+                        </div>
                     ))}
                 </div>
             </div>
