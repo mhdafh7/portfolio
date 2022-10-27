@@ -4,9 +4,9 @@ import Link from "next/link"
 const Navbar = () => {
     return (
         <>
-            <div className={styles.container}>
+            <nav className={styles.container}>
                 <ul>
-                    <Link href="/404">
+                    <Link href="projects">
                         <li className={styles.navItem}>Projects</li>
                     </Link>
                     <Link href="/404">
@@ -20,7 +20,7 @@ const Navbar = () => {
                         </li>
                     </Link>
                 </ul>
-            </div>
+            </nav>
             <div className={styles.mobileContainer}>
                 <div className={styles.line}></div>
                 <div className={styles.line}></div>

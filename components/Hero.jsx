@@ -2,7 +2,7 @@ import styles from "../styles/Hero.module.scss"
 
 const Hero = () => {
     return (
-        <div className={styles.container}>
+        <section className={styles.container}>
             <div className={styles.blob}></div>
 
             <h1 className={styles.title}>
@@ -10,7 +10,7 @@ const Hero = () => {
                 <br />
                 for the <span>web.</span>
             </h1>
-        </div>
+        </section>
     )
 }
 export default Hero

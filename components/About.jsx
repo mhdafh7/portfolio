@@ -2,7 +2,7 @@ import styles from "../styles/About.module.scss"
 
 const About = () => {
     return (
-        <div className={styles.wrapper}>
+        <section className={styles.wrapper}>
             <div className={styles.container}>
                 <div className={styles.title}>
                     <h3>
@@ -21,7 +21,7 @@ const About = () => {
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 export default About

@@ -19,7 +19,7 @@ const projectItems = [
 
 const Projects = () => {
     return (
-        <div className={styles.container}>
+        <section className={styles.container} id="projects">
             <div className={styles.titleContainer}>
                 <h2 className={styles.title}>Somethings </h2>
                 <h2 className={styles.title}>
@@ -38,7 +38,7 @@ const Projects = () => {
                     )
                 })}
             </div>
-        </div>
+        </section>
     )
 }
 export default Projects

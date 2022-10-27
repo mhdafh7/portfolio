@@ -3,9 +3,9 @@ import styles from "../styles/ProjectItem.module.scss"
 
 const ProjectItem = ({ title, img, tags }) => {
     return (
-        <div className={styles.container}>
+        <figure className={styles.container}>
             <div className={styles.about}>
-                <h3 className={styles.title}>{title}</h3>
+                <figcaption className={styles.title}>{title}</figcaption>
                 <div className={styles.tags}>
                     {tags.map((tag) => (
                         <div
@@ -26,7 +26,7 @@ const ProjectItem = ({ title, img, tags }) => {
                     alt={title}
                 />
             </div>
-        </div>
+        </figure>
     )
 }
 export default ProjectItem
