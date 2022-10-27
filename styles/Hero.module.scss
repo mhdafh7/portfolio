@@ -1,5 +1,6 @@
 @import "colors";
 @import "fonts";
+
 .container {
     min-height: 100vh;
     display: flex;
@@ -24,11 +25,11 @@
         position: relative;
         text-transform: uppercase;
         line-height: 1.39;
-        font-size: clamp(2rem, 1.8rem + 7vw, 6rem);
+        font-size: clamp(2rem, 1.2rem + 9vw, 6rem);
         letter-spacing: 0.03em;
         text-align: center;
         color: $secondary;
-        font-weight: bolder;
+        font-weight: 800;
         span {
             color: $accent-dark;
         }

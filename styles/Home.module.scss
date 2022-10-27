@@ -9,7 +9,7 @@
 
     .main {
         width: 100%;
-        padding: 0 7.5rem;
+        padding: 0 10vw;
     }
     @media (max-width: 992px) {
         & {
@@ -19,18 +19,4 @@
             }
         }
     }
-    @media (max-width: 576px) {
-        & {
-            padding: 0;
-
-            .main {
-                padding: 0 1.5rem;
-            }
-        }
-    }
 }
-
-// @media (min-width: 576px) {  }
-
-// // Medium devices (tablets, 768px and up)
-// @media (min-width: 768px) {  }
