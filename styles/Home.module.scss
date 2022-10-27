@@ -11,16 +11,19 @@
         width: 100%;
         padding: 0 7.5rem;
     }
-    @media (max-width:992px) {
-        &{
-            padding: 0 2rem;
+    @media (max-width: 992px) {
+        & {
+            .main {
+                flex-direction: column;
+                justify-content: center;
+            }
         }
     }
-    @media (max-width:576px) {
-        &{
+    @media (max-width: 576px) {
+        & {
             padding: 0;
 
-            .main{
+            .main {
                 padding: 0 1.5rem;
             }
         }
@@ -31,14 +34,3 @@
 
 // // Medium devices (tablets, 768px and up)
 // @media (min-width: 768px) {  }
-
-// // Large devices (desktops, 992px and up)
-@media (max-width: 992px) {
-    .container {
-        padding-bottom: 10vh;
-        .main {
-            flex-direction: column;
-            justify-content: center;
-        }
-    }
-}
