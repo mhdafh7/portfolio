@@ -6,11 +6,10 @@
     background-color: $primary;
     min-height: 100vh;
     position: relative;
-    padding: 0 5rem;
 
     .main {
         width: 100%;
-        padding: 0 2.5rem;
+        padding: 0 7.5rem;
     }
     @media (max-width:992px) {
         &{
