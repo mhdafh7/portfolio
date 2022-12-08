@@ -1,5 +1,5 @@
 import Image from "next/image"
-import styles from "../styles/ProjectItem.module.scss"
+import styles from "./ProjectItem.module.scss"
 
 const ProjectItem = ({ title, img, tags }) => {
     return (
@@ -21,8 +21,6 @@ const ProjectItem = ({ title, img, tags }) => {
                 <Image
                     src={img}
                     layout="fill"
-                    width={100}
-                    height={200}
                     alt={title}
                 />
             </div>

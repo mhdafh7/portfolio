@@ -1,5 +1,5 @@
-import styles from "../styles/Header.module.scss"
-import Navbar from "./Navbar"
+import styles from "./Header.module.scss"
+import Navbar from "../Navbar"
 const Header = () => {
     return (
         <header className={styles.wrapper}>

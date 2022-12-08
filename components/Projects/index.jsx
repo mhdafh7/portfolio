@@ -1,5 +1,5 @@
-import styles from "../styles/Projects.module.scss"
-import ProjectItem from "./ProjectItem"
+import styles from "./Projects.module.scss"
+import ProjectItem from "../ProjectItem"
 
 
 const projectItems = [
