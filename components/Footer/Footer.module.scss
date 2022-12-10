@@ -13,6 +13,7 @@
     .title {
         @include title(3rem, 2.2rem, 7vw, 12rem);
         margin-top: 10rem;
+        text-align: center;
     }
 
     .cardAndLinks {
