@@ -24,16 +24,12 @@
     .title {
         display: flex;
         flex-direction: column;
-        font-weight: 800;
 
         span:last-of-type {
             color: $accent-dark;
         }
-        font-size: clamp(2rem, 1.2rem + 9vw, 6rem);
         text-align: left;
-        text-transform: uppercase;
-        letter-spacing: 1.2px;
-        line-height: 1.55;
+        @include title(2rem, 1.2rem, 9vw, 6rem);
     }
     .bio {
         font-weight: 600;

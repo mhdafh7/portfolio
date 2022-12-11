@@ -20,11 +20,7 @@
         flex-direction: column;
 
         h2 {
-            letter-spacing: 0.02em;
-            line-height: 1.39;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: clamp(0.8rem, 0.6rem + 10vw, 10rem);
+            @include title(0.8rem, 0.6rem, 10vw, 10rem);
 
             &:last-of-type {
                 display: flex;
