@@ -1,9 +1,9 @@
-@import "colors";
+@import 'colors';
 .container {
     max-width: 2160px;
     min-width: 360px;
     margin: auto;
-    background-color: $primary;
+    background-color: $bg;
     min-height: 100vh;
     position: relative;
 

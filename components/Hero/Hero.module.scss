@@ -10,17 +10,6 @@
     padding-top: 7rem;
     position: relative;
 
-    .blob {
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        height: clamp(420px, 60vh, 90vw);
-        width: clamp(420px, 60vh, 90vw);
-        background-color: $blob-bg;
-        border-radius: 50%;
-        opacity: 0.6;
-    }
     .title {
         position: relative;
         text-transform: uppercase;
@@ -28,7 +17,7 @@
         font-size: clamp(2rem, 1.2rem + 9vw, 6rem);
         letter-spacing: 0.03em;
         text-align: center;
-        color: $secondary;
+        color: $text;
         font-weight: 800;
         span {
             color: $accent-dark;

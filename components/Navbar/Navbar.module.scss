@@ -6,9 +6,9 @@
     align-items: center;
     justify-content: flex-end;
     width: 100%;
-
+    
     ul {
-        width: clamp(424px, 60%, 29vw);
+        width: clamp(424px, 60%, 25vw);
         list-style: none;
         display: flex;
         align-items: center;
@@ -19,7 +19,6 @@
             cursor: pointer;
         }
         .contact {
-            background-color: $accent;
             padding: 0.8rem 2rem;
             border-radius: 41px;
         }
@@ -46,7 +45,7 @@
 
         .line {
             content: "";
-            background-color: $secondary;
+            background-color: $text;
             width: 60%;
             height: 5%;
             border-radius: 30px;
