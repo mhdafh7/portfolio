@@ -2,7 +2,10 @@ import styles from './Hero.module.scss';
 
 const Hero = () => {
     return (
-        <section className={styles.container}>
+        <section
+            className={styles.container}
+            id="Home"
+        >
             <h1 className={styles.title}>
                 I make things
                 <br />

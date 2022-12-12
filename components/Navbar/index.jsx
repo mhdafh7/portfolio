@@ -22,8 +22,7 @@ const Navbar = () => {
                 </ul>
             </nav>
             <div className={styles.mobileContainer}>
-                <div className={styles.line}></div>
-                <div className={styles.line}></div>
+            <h3>MENU</h3>
             </div>
         </>
     )
