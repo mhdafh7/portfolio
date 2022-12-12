@@ -1,4 +1,5 @@
 import styles from './Footer.module.scss';
+import { motion } from 'framer-motion';
 
 const Footer = () => {
     return (
@@ -10,14 +11,23 @@ const Footer = () => {
                 Get in touch<span>.</span>
             </h3>
             <div className={styles.cardAndLinks}>
-                <div className={styles.card}>
+                <motion.div
+                    className={styles.card}
+                    drag
+                    dragConstraints={{
+                        top: 0,
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                    }}
+                >
                     <h4 className={styles.jobTitle}>Full stack developer.</h4>
                     <h4 className={styles.contactDetail}>mhdaflah@tuta.io</h4>
                     <h4 className={styles.contactDetail}>+91 701 283 2060</h4>
                     <h3>
                         Muhammed <br /> Aflah.
                     </h3>
-                </div>
+                </motion.div>
                 <div className={styles.links}>
                     <ul>
                         <li>
