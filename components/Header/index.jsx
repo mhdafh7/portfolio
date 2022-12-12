@@ -1,15 +1,53 @@
-import styles from "./Header.module.scss"
-import Navbar from "../Navbar"
+import styles from './Header.module.scss';
+import Navbar from '../Navbar';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+import { useEffect,useState } from 'react'
+
+function useScrollDirection() {
+    const [scrollDirection, setScrollDirection] = useState(null);
+
+    useEffect(() => {
+        let lastScrollY = window.pageYOffset;
+
+        const updateScrollDirection = () => {
+            const scrollY = window.pageYOffset;
+            const direction = scrollY > lastScrollY ? 'down' : 'up';
+            if (
+                direction !== scrollDirection &&
+                (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)
+            ) {
+                setScrollDirection(direction);
+            }
+            lastScrollY = scrollY > 0 ? scrollY : 0;
+        };
+        window.addEventListener('scroll', updateScrollDirection); // add event listener
+        return () => {
+            window.removeEventListener('scroll', updateScrollDirection); // clean up
+        };
+    }, [scrollDirection]);
+
+    return scrollDirection;
+}
+
 const Header = () => {
+    const scrollDirection = useScrollDirection();
+
     return (
-        <header className={styles.wrapper}>
+        <motion.header
+            className={styles.wrapper}
+            initial={{ top: 0 }}
+            animate={scrollDirection === 'down' ? { top: '-10vh' } : {}}
+        >
             <div className={styles.container}>
                 <div className={styles.logo}>
-                    <h3>Mhdafh.</h3>
+                    <Link href="#Home">
+                        <h3>Mhdafh.</h3>
+                    </Link>
                 </div>
                 <Navbar />
             </div>
-        </header>
-    )
-}
-export default Header
+        </motion.header>
+    );
+};
+export default Header;
