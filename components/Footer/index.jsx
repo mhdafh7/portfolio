@@ -32,32 +32,27 @@ const Footer = () => {
                     <ul>
                         <li>
                             <a
-                                href=""
+                                href="https://www.linkedin.com/in/muhammed-aflah"
                                 target="_blank"
+                                rel="noreferrer"
                             >
                                 Linkedin
                             </a>
                         </li>
                         <li>
                             <a
-                                href=""
+                                href="https://github.com/mhdafh7"
                                 target="_blank"
+                                rel="noreferrer"
                             >
                                 Github
                             </a>
                         </li>
                         <li>
                             <a
-                                href=""
+                                href="https://drive.google.com/file/d/1qkae_X192lXVY6kS3DPj06Cfvelpbj6C/view?usp=drivesdk"
                                 target="_blank"
-                            >
-                                Twitter
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href=""
-                                target="_blank"
+                                rel='noreferrer'
                             >
                                 Resume
                             </a>
