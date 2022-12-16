@@ -32,9 +32,7 @@
 @mixin title($low: 2rem, $midRem: 1.8rem, $midVw: 7vw, $high: 6rem, $fontWeight: 800) {
     line-height: 1.39;
     font-size: clamp($low, $midRem + $midVw, $high);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
+    letter-spacing: -0.01em;
     @if $fontWeight != 800 {
       font-weight: $fontWeight;
     }

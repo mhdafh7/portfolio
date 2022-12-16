@@ -1,4 +1,4 @@
-@import 'colors';
+@import 'constants';
 .container {
     max-width: 2160px;
     min-width: 360px;
@@ -11,7 +11,7 @@
         width: 100%;
         padding: 0 10vw;
     }
-    @media (max-width: 992px) {
+    @media (max-width: $large) {
         & {
             .main {
                 flex-direction: column;
