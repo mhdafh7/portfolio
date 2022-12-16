@@ -1,21 +1,34 @@
-import Image from "next/image"
-import styles from "./ProjectItem.module.scss"
+import Image from 'next/image';
+import styles from './ProjectItem.module.scss';
+import { motion } from 'framer-motion';
+import AnimatedLetters from '../AnimatedLetters';
+import { variantParent, variantChild } from '../../constants/constants';
 
 const ProjectItem = ({ title, img, tags }) => {
     return (
         <figure className={styles.container}>
             <div className={styles.about}>
-                <figcaption className={styles.title}>{title}</figcaption>
-                <div className={styles.tags}>
+                <AnimatedLetters
+                    text={title}
+                    className={styles.title}
+                />
+                <motion.div
+                    variants={variantParent}
+                    className={styles.tags}
+                    initial="offscreen"
+                    whileInView="onscreen"
+                    viewport={{ once: true, amount: 0.8 }}
+                >
                     {tags.map((tag) => (
-                        <div
+                        <motion.div
                             key={tag}
                             className={styles.tag}
+                            variants={variantChild}
                         >
                             <h4>{tag}</h4>
-                        </div>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </div>
             <div className={styles.img}>
                 <Image
@@ -25,6 +38,6 @@ const ProjectItem = ({ title, img, tags }) => {
                 />
             </div>
         </figure>
-    )
-}
-export default ProjectItem
+    );
+};
+export default ProjectItem;

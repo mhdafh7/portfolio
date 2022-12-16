@@ -1,5 +1,6 @@
 import styles from './Footer.module.scss';
 import { motion } from 'framer-motion';
+import { variants } from '../../constants/constants';
 
 const Footer = () => {
     return (
@@ -7,9 +8,22 @@ const Footer = () => {
             className={styles.container}
             id="Contact"
         >
-            <h3 className={styles.title}>
-                Get in touch<span>.</span>
-            </h3>
+            <motion.div
+                initial="offscreen"
+                whileInView="onscreen"
+                transition={{
+                    ease: 'easeIn',
+                    duration: 0.8,
+                }}
+                viewport={{ once: true, amount: 0.8 }}
+            >
+                <motion.h3
+                    className={styles.title}
+                    variants={variants}
+                >
+                    Get in touch<span>.</span>
+                </motion.h3>
+            </motion.div>
             <div className={styles.cardAndLinks}>
                 <motion.div
                     className={styles.card}

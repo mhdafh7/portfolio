@@ -1,10 +1,7 @@
 import styles from './About.module.scss';
 import { motion } from 'framer-motion';
+import { variants } from '../../constants/constants'
 
-const variants = {
-    offscreen: { filter: 'blur(10px)', opacity: 0.2 },
-    onscreen: { filter: 'blur(0px)', opacity: 1 },
-};
 const About = () => {
     return (
         <section

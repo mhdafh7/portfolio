@@ -1,26 +1,7 @@
 import styles from './Projects.module.scss';
 import ProjectItem from '../ProjectItem';
-
-const projectItems = [
-    {
-        id: 1,
-        title: 'Noteey',
-        img: '/Image.jpg',
-        tags: ['UI/UX', 'Next.js', 'Scss', 'Firebase'],
-    },
-    {
-        id: 2,
-        title: 'Bingolfy',
-        img: '/Image.jpg',
-        tags: ['UI/UX', 'Next.js', 'Socket.io', 'NodeJS'],
-    },
-    {
-        id: 3,
-        title: 'Vidyuth',
-        img: '/Image.jpg',
-        tags: ['UI/UX', 'Next.js', 'Scss'],
-    },
-];
+import { motion } from 'framer-motion';
+import { projectItems, variants } from '../../constants/constants';
 
 const Projects = () => {
     return (
@@ -28,12 +9,29 @@ const Projects = () => {
             className={styles.container}
             id="Projects"
         >
-            <div className={styles.titleContainer}>
-                <h2 className={styles.title}>Some things </h2>
-                <h2 className={styles.title}>
-                    <span>I made.</span>
-                </h2>
-            </div>
+            <motion.div
+                className={styles.titleContainer}
+                initial="offscreen"
+                whileInView="onscreen"
+                transition={{
+                    ease: 'easeIn',
+                    duration: 0.8,
+                }}
+                viewport={{ once: true, amount: 0.8 }}
+            >
+                <motion.h2
+                    variants={variants}
+                    className={styles.title}
+                >
+                    Some things
+                </motion.h2>
+                <motion.h2
+                    variants={variants}
+                    className={styles.title}
+                >
+                    <span style={{ color: 'black' }}>I made.</span>
+                </motion.h2>
+            </motion.div>
             <div className={styles.projectContainer}>
                 {projectItems.map((item) => {
                     return (
