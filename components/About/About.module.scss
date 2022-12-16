@@ -1,4 +1,4 @@
-@import '../../styles/colors';
+@import '../../styles/constants';
 @import '../../styles/fonts';
 
 .container {
@@ -29,7 +29,7 @@
             color: $accent-dark;
         }
         text-align: left;
-        @include title(2rem, 1.2rem, 9vw, 6rem);
+        @include title(3rem, 2.2rem, 8vw, 8rem);
     }
     .bio {
         font-weight: 600;
@@ -45,7 +45,7 @@
         }
     }
 
-    @media (max-width: 992px) {
+    @media (max-width: $large) {
         flex-direction: column;
         gap: 2rem;
     }
