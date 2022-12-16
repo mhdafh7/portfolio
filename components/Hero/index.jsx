@@ -1,17 +1,36 @@
 import styles from './Hero.module.scss';
+import { motion } from 'framer-motion';
+import AnimatedLetters from '../AnimatedLetters';
 
 const Hero = () => {
     return (
-        <section
+        <motion.section
             className={styles.container}
             id="Home"
         >
-            <h1 className={styles.title}>
-                I make things
-                <br />
-                for the <span>web.</span>
-            </h1>
-        </section>
+            <AnimatedLetters
+                className={styles.title}
+                text={'I make'}
+            />
+            <AnimatedLetters
+                className={styles.title}
+                text={' things '}
+                delay={1.35}
+            />
+            <AnimatedLetters
+                className={styles.title}
+                delay={1.75}
+                text={'for the'}
+            />
+            <AnimatedLetters
+                className={styles.title}
+                delay={2.1}
+                style={{
+                    color: 'black',
+                }}
+                text={' web.'}
+            />
+        </motion.section>
     );
 };
 export default Hero;
