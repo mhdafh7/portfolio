@@ -1,4 +1,4 @@
-@import '../../styles/colors';
+@import '../../styles/constants';
 @import '../../styles/fonts';
 
 .wrapper {
@@ -34,15 +34,5 @@
             }
         }
     }
-    // @media (max-width: 992px) {
 
-    // }
-    // @media (max-width: 576px) {
-    //     & {
-    //         .container {
-    //             // margin: 1rem auto;
-    //             // padding: 1rem 1.2rem;
-    //         }
-    //     }
-    // }
 }

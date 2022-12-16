@@ -15,11 +15,11 @@ const projectItems = [
         tags: ['UI/UX', 'Next.js', 'Socket.io', 'NodeJS'],
     },
     {
-        id:3,
+        id: 3,
         title: 'Vidyuth',
         img: '/Image.jpg',
-        tags: ['UI/UX','Next.js','Scss',]
-    }
+        tags: ['UI/UX', 'Next.js', 'Scss'],
+    },
 ];
 
 const Projects = () => {
@@ -31,7 +31,7 @@ const Projects = () => {
             <div className={styles.titleContainer}>
                 <h2 className={styles.title}>Some things </h2>
                 <h2 className={styles.title}>
-                    I made<span>.</span>
+                    <span>I made.</span>
                 </h2>
             </div>
             <div className={styles.projectContainer}>

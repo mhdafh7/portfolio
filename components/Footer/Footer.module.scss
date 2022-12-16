@@ -1,4 +1,4 @@
-@import '../../styles/colors';
+@import '../../styles/constants';
 @import '../../styles/fonts';
 
 .container {
@@ -37,12 +37,12 @@
             max-width: 644px;
             aspect-ratio: 7/4;
             border-radius: 23px;
-            background-color: $card-bg;
+            background-color: $accent-dark;
             color: $text;
             padding: $cardPadding;
-            text-transform: uppercase;
+            // text-transform: uppercase;
             position: relative;
-            border: 2px solid $accent-dark;
+            // border: 4px solid $accent-dark;
             box-shadow: 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
                 0px 9px 46px 8px rgba(0, 0, 0, 0.12),
                 0px 11px 15px -7px rgba(0, 0, 0, 0.2);
@@ -57,7 +57,25 @@
                 right: $cardPadding;
                 font-size: 0.8rem;
                 font-weight: 500;
-                letter-spacing: 0.055em;
+                letter-spacing: 0.09em;
+            }
+            .line1 {
+                position: absolute;
+                height: 5px;
+                width: 63%;
+                background-color: $text;
+                top: 2.9em;
+                left: 0;
+                opacity: 0.3;
+            }
+            .line2{
+                position: absolute;
+                height: 5px;
+                width: 6%;
+                background-color: $text;
+                top: 2.9em;
+                right: 0;
+                opacity: 0.3;
             }
             .jobTitle {
                 top: $cardPadding;
@@ -78,7 +96,7 @@
                 letter-spacing: 0.055em;
             }
 
-            @media (max-width:576px) {
+            @media (max-width: $small) {
                 scale: 0.7;
             }
         }

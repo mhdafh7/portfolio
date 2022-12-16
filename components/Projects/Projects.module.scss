@@ -1,4 +1,4 @@
-@import '../../styles/colors';
+@import '../../styles/constants';
 @import '../../styles/fonts';
 
 .container {
@@ -11,7 +11,7 @@
         color: $accent-dark;
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: $small) {
         margin-top: 10vh;
     }
     color: $text;
@@ -27,12 +27,12 @@
                 align-items: center;
                 justify-content: flex-end;
 
-                @media (max-width: 576px) {
+                @media (max-width: $small) {
                     justify-content: flex-start;
                 }
             }
         }
-        @media (max-width: 576px) {
+        @media (max-width: $small) {
             padding: 0;
         }
     }

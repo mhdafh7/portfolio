@@ -1,4 +1,4 @@
-@import "../../styles/colors";
+@import "../../styles/constants";
 @import "../../styles/fonts";
 
 .container {
@@ -24,14 +24,14 @@
         }
     }
 
-    @media (max-width: 992px) {
+    @media (max-width: $large) {
         display: none;
     }
 }
 .mobileContainer {
     display: none;
 
-    @media (max-width: 992px) {
+    @media (max-width: $large) {
         display: flex;
         align-items: center;
         justify-content: center;

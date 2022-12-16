@@ -2,7 +2,7 @@ import styles from './Header.module.scss';
 import Navbar from '../Navbar';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { useEffect,useState } from 'react'
+import { useEffect, useState } from 'react';
 
 function useScrollDirection() {
     const [scrollDirection, setScrollDirection] = useState(null);
@@ -29,6 +29,20 @@ function useScrollDirection() {
 
     return scrollDirection;
 }
+const cardVariants = {
+    offscreen: {
+        y: 1700,
+    },
+    onscreen: {
+        y: 50,
+        rotate: -10,
+        transition: {
+                type: 'spring',
+            bounce: 0.4,
+            duration: 0.8,
+        },
+    },
+};
 
 const Header = () => {
     const scrollDirection = useScrollDirection();

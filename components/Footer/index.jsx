@@ -21,6 +21,8 @@ const Footer = () => {
                         bottom: 0,
                     }}
                 >
+                    <div className={styles.line1}></div>
+                    <div className={styles.line2}></div>
                     <h4 className={styles.jobTitle}>Full stack developer.</h4>
                     <h4 className={styles.contactDetail}>mhdaflah@tuta.io</h4>
                     <h4 className={styles.contactDetail}>+91 701 283 2060</h4>
@@ -52,7 +54,7 @@ const Footer = () => {
                             <a
                                 href="https://drive.google.com/file/d/1qkae_X192lXVY6kS3DPj06Cfvelpbj6C/view?usp=drivesdk"
                                 target="_blank"
-                                rel='noreferrer'
+                                rel="noreferrer"
                             >
                                 Resume
                             </a>

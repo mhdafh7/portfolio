@@ -1,4 +1,4 @@
-@import '../../styles/colors';
+@import '../../styles/constants';
 @import '../../styles/fonts';
 
 .container {
@@ -6,6 +6,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
     margin: auto;
     padding-top: 7rem;
     position: relative;
@@ -14,13 +16,10 @@
         position: relative;
         text-align: center;
         color: $text;
-        @include title(2rem, 1.2rem, 7vw, 6rem);
-        span {
-            color: $accent-dark;
-        }
+        @include title(4rem, 3.2rem, 10vw, 12rem);
     }
 }
-@media (max-width: 992px) {
+@media (max-width: $large) {
     .container {
         margin: auto 1rem;
         padding-top: 5rem;

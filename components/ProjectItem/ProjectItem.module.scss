@@ -1,4 +1,4 @@
-@import "../../styles/colors";
+@import "../../styles/constants";
 @import "../../styles/fonts";
 
 .container {
@@ -61,7 +61,7 @@
         }
     }
 
-    @media (max-width: 992px) {
+    @media (max-width: $large) {
         & {
             width: 100%;
             height: 90vw;
@@ -82,7 +82,7 @@
             }
         }
     }
-    @media (max-width: 576px) {
+    @media (max-width: $small) {
         height: 70vh;
     }
 }
