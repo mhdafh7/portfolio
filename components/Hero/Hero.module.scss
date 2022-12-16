@@ -16,7 +16,7 @@
         position: relative;
         text-align: center;
         color: $text;
-        @include title(4rem, 3.2rem, 10vw, 12rem);
+        @include title(4rem, 2.2rem, 10vw, 12rem);
     }
 }
 @media (max-width: $large) {
