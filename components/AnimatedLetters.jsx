@@ -35,7 +35,7 @@ const AnimatedLetters = ({ text, delay = 1, duration = 0.05, ...props }) => {
     };
 
     return (
-        <motion.h1
+        <motion.h2
             style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -45,7 +45,7 @@ const AnimatedLetters = ({ text, delay = 1, duration = 0.05, ...props }) => {
             }}
             variants={container}
             initial="hidden"
-            animate={'visible'}
+            animate="visible"
             {...props}
         >
             {letters.map((letter, index) => (
@@ -56,7 +56,7 @@ const AnimatedLetters = ({ text, delay = 1, duration = 0.05, ...props }) => {
                     {letter === ' ' ? '\u00A0' : letter}
                 </motion.span>
             ))}
-        </motion.h1>
+        </motion.h2>
     );
 };
 
