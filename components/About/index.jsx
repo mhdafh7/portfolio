@@ -1,6 +1,6 @@
 import styles from './About.module.scss';
 import { motion } from 'framer-motion';
-import { variants } from '../../constants/constants'
+import { variants } from '../../constants/constants';
 
 const About = () => {
     return (
