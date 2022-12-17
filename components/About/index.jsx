@@ -20,7 +20,7 @@ const About = () => {
                     viewport={{ once: true, amount: 0.8 }}
                 >
                     <motion.h3 variants={variants}>
-                        <span>I am</span> <br /> Muhammed Aflah<span>.</span>
+                        <span>Hey! I am</span> <br /> Muhammed Aflah<span>.</span>
                     </motion.h3>
                 </motion.div>
             </div>
