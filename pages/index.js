@@ -14,7 +14,7 @@ export default function Home() {
     return (
         <div className={styles.container}>
             <Head>
-                <title>Muhammed Aflah | Portfolio</title>
+                <title>Mhdafh | Portfolio</title>
                 <meta
                     name="description"
                     content="Developer portfolio of Muhammed Aflah"
