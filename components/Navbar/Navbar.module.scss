@@ -18,10 +18,7 @@
             font-weight: bold;
             cursor: pointer;
         }
-        // .contact {
-        //     padding: 0.8rem 2rem;
-        //     border-radius: 41px;
-        // }
+
     }
 
     @media (max-width: $large) {
@@ -40,5 +37,7 @@
         height: clamp(35px, 7vw, 60px);
         width: clamp(35px, 7vw, 60px);
         cursor: pointer;
+        text-decoration: line-through;
+        cursor: not-allowed;
     }
 }
