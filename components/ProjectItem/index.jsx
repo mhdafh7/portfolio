@@ -33,8 +33,12 @@ const ProjectItem = ({ title, img, tags }) => {
             <div className={styles.img}>
                 <Image
                     src={img}
-                    layout="fill"
+                    layout="fixed"
+                    width={700}
+                    height={1100}
                     alt={title}
+                    data-scroll
+                    data-scroll-speed="1"
                 />
             </div>
         </figure>

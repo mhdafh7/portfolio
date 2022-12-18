@@ -17,7 +17,7 @@ const Projects = () => {
                     ease: 'easeIn',
                     duration: 0.8,
                 }}
-                viewport={{ once: true, amount: 0.8 }}
+                viewport={{ once: true, amount: 0.5 }}
             >
                 <motion.h2
                     variants={variants}

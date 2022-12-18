@@ -24,7 +24,7 @@ const Loader = ({ setLoading }) => {
                 ease: [0.6, 0.01, -0.05, 0.9],
                 type: 'spring',
                 bounce: 0.1,
-                duration: 2.8,
+                duration: 1.8,
             }}
         ></motion.section>
     );

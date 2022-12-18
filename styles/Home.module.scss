@@ -11,6 +11,18 @@
         width: 100%;
         padding: 0 10vw;
     }
+    .radiusDiv {
+        width: 100vw;
+        height: 40vh;
+        translate: 0 17vh;
+        background-color: $bg;
+        box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1),
+            0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+        border-radius: 50% 50% 50% 50% / 0% 0% 6% 6%;
+        position: relative;
+        z-index: 9999;
+    }
+
     @media (max-width: $large) {
         & {
             .main {

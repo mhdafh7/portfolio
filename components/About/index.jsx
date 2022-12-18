@@ -17,7 +17,7 @@ const About = () => {
                         ease: 'easeIn',
                         duration: 0.8,
                     }}
-                    viewport={{ once: true, amount: 0.8 }}
+                    viewport={{ once: true, amount: 0.5 }}
                 >
                     <motion.h3 variants={variants}>
                         <span>Hey! I am</span> <br /> Muhammed Aflah<span>.</span>
@@ -32,7 +32,7 @@ const About = () => {
                     ease: 'easeIn',
                     duration: 0.8,
                 }}
-                viewport={{ once: true, amount: 0.8 }}
+                viewport={{ once: true, amount: 0.5 }}
             >
                 <motion.p
                     variants={variants}
