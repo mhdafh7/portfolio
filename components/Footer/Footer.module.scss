@@ -12,7 +12,6 @@
     gap: 3rem;
     padding: 0 7.5rem;
     padding-bottom: 5rem;
-    margin-top: 20vh;
 
     span {
         color: $accent-dark;
@@ -26,6 +25,7 @@
         @include title(3rem, 2.2rem, 7vw, 12rem);
         margin-top: 10rem;
         text-align: center;
+        // margin-inline: 50%;
     }
 
     .cardAndLinks {
