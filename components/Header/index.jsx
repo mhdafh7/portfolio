@@ -1,8 +1,7 @@
 import styles from './Header.module.scss';
 import Navbar from '../Navbar';
-import Link from 'next/link';
+import { useLocomotiveScroll } from 'react-locomotive-scroll';
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
 
 // function useScrollDirection() {
 //     const [scrollDirection, setScrollDirection] = useState(null);
@@ -31,8 +30,11 @@ import { useEffect, useState } from 'react';
 // }
 
 const Header = () => {
-    // const scrollDirection = useScrollDirection();
-
+    const { scroll } = useLocomotiveScroll();
+    const scrollToComponent = (e, target) => {
+        e.preventDefault();
+        scroll && scroll.scrollTo(target);
+    };
     return (
         <motion.header
             className={styles.wrapper}
@@ -43,9 +45,13 @@ const Header = () => {
         >
             <div className={styles.container}>
                 <div className={styles.logo}>
-                    <Link href="#Home">
-                        <h3>Mhdafh.</h3>
-                    </Link>
+                    <h3
+                        onClick={(e) => {
+                            scrollToComponent(e, 0);
+                        }}
+                    >
+                        Mhdafh.
+                    </h3>
                 </div>
                 <Navbar />
             </div>

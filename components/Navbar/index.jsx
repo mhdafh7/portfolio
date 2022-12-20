@@ -1,12 +1,14 @@
 import styles from './Navbar.module.scss';
 import { useLocomotiveScroll } from 'react-locomotive-scroll';
-import Link from 'next/link';
 
 const Navbar = () => {
     const { scroll } = useLocomotiveScroll();
-    const scrollToComponent = (e, target) => {
+    const scrollToComponent = (e, target, offset = 0) => {
         e.preventDefault();
-        scroll && scroll.scrollTo(target);
+        scroll &&
+            scroll.scrollTo(target, {
+                offset: offset,
+            });
     };
     return (
         <>
@@ -24,7 +26,7 @@ const Navbar = () => {
                     <li
                         className={styles.navItem}
                         onClick={(e) => {
-                            scrollToComponent(e, '#Projects');
+                            scrollToComponent(e, '#Projects', -100);
                         }}
                     >
                         Projects
