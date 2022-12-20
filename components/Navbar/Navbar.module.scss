@@ -18,6 +18,13 @@
             font-weight: bold;
             cursor: pointer;
         }
+        .contact{
+            background-color: $accent-dark;
+            color: $bg;
+            border-radius: 20px;
+            padding-block: 0.6rem;
+            padding-inline: 1rem;
+        }
 
     }
 

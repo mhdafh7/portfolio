@@ -20,16 +20,22 @@ const Projects = () => {
                 viewport={{ once: true, amount: 0.5 }}
             >
                 <motion.h2
-                    variants={variants}
+                    // variants={variants}
                     className={styles.title}
+                    data-scroll
+                    data-scroll-direction="horizontal"
+                    data-scroll-speed="-1"
                 >
                     Some things
                 </motion.h2>
                 <motion.h2
-                    variants={variants}
+                    // variants={variants}
                     className={styles.title}
+                    data-scroll
+                    data-scroll-direction="horizontal"
+                    data-scroll-speed="1"
                 >
-                    <span style={{ color: 'black' }}>I made.</span>
+                    <span>I made.</span>
                 </motion.h2>
             </motion.div>
             <div className={styles.projectContainer}>

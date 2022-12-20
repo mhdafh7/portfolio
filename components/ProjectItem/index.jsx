@@ -35,8 +35,9 @@ const ProjectItem = ({ title, img, tags }) => {
                     src={img}
                     layout="fixed"
                     width={700}
-                    height={1100}
+                    height={1400}
                     alt={title}
+                    
                     data-scroll
                     data-scroll-speed="1"
                 />

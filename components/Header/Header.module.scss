@@ -21,7 +21,6 @@ html[data-direction='down'] .wrapper {
         border-radius: 5px;
         backdrop-filter: blur(33px);
         background-color: $header-bg;
-        border-bottom: $text 2px solid;
 
         @media (max-width: $small) {
             padding-inline: 2.5rem;

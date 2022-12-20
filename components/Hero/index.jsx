@@ -25,9 +25,6 @@ const Hero = () => {
             <AnimatedLetters
                 className={styles.title}
                 delay={2.1}
-                style={{
-                    color: 'black',
-                }}
                 text={' web.'}
             />
         </motion.section>
