@@ -37,7 +37,7 @@ const ProjectItem = ({ title, img, tags }) => {
                     width={700}
                     height={1400}
                     alt={title}
-                    
+                    priority
                     data-scroll
                     data-scroll-speed="1"
                 />
