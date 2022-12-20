@@ -15,7 +15,7 @@
         display: flex;
         flex-direction: column;
 
-        h2 {
+        .title {
             @include title(0.8rem, 0.6rem, 10vw, 10rem);
 
             &:last-of-type {
@@ -26,6 +26,9 @@
                 @media (max-width: $small) {
                     justify-content: flex-start;
                 }
+            }
+            span{
+                color: $accent-dark;
             }
         }
         @media (max-width: $small) {

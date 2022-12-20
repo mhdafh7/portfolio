@@ -32,7 +32,8 @@
                 font-size: clamp(0.5rem, 0.1rem + 3vw, 1rem);
                 margin: 0.2rem 0;
                 display: inline-block;
-                background-color: $footer-bg;
+                background-color: $text;
+                color: $bg;
                 border: $text 2px solid;
                 padding: 0.6em 1.4em;
                 border-radius: 34px;
@@ -54,8 +55,6 @@
         display: flex;
         align-items: center;
         overflow: hidden;
-        border-radius: 20px;
-        // border: $accent-dark solid 4px;
 
         img {
             border-radius: 17px;
