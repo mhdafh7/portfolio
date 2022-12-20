@@ -8,7 +8,7 @@
     flex-direction: column;
 
     @media (max-width: $small) {
-        margin-top: 10vh;
+        margin-top: 20vh;
     }
     color: $text;
     .titleContainer {
@@ -27,7 +27,7 @@
                     justify-content: flex-start;
                 }
             }
-            span{
+            span {
                 color: $accent-dark;
             }
         }
@@ -43,5 +43,9 @@
         align-items: center;
         gap: 5rem;
         margin-top: 25vh;
+
+        @media (max-width: $small) {
+            margin-top: 10vh;
+        }
     }
 }

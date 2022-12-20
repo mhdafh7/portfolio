@@ -1,13 +1,10 @@
 @import '../../styles/constants';
 @import '../../styles/fonts';
 
-html[data-direction='down'] .wrapper {
-    transform: translate3d(0, -100%, 0);
-}
 .wrapper {
     position: fixed;
+    left: 0;
     width: 100vw;
-    margin: auto;
     z-index: 999;
     color: $text;
 

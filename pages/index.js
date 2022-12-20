@@ -53,7 +53,11 @@ export default function Home() {
                     <About data-scroll-section />
                     <Projects data-scroll-section />
                 </motion.main>
-                <motion.div className={styles.radiusDiv} data-scroll data-scroll-speed="1"></motion.div>
+                <motion.div
+                    className={styles.radiusDiv}
+                    data-scroll
+                    data-scroll-speed="1"
+                ></motion.div>
                 <Footer data-scroll-section />
             </div>
         </LocomotiveScrollProvider>

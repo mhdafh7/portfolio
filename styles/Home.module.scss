@@ -1,6 +1,5 @@
 @import 'constants';
 .container {
-    max-width: 2160px;
     min-width: 360px;
     margin: auto;
     background-color: $bg;
@@ -8,7 +7,9 @@
     position: relative;
 
     .main {
+        max-width: 2160px;
         width: 100%;
+        margin: auto;
         padding: 0 10vw;
     }
     .radiusDiv {
@@ -21,6 +22,10 @@
         border-radius: 50% 50% 50% 50% / 0% 0% 6% 6%;
         position: relative;
         z-index: 9999;
+
+        @media (max-width: $small){
+            translate: 0 5vh;
+        }
     }
 
     @media (max-width: $large) {
