@@ -5,12 +5,12 @@ export const projectItems = [
     img: '/Image.jpg',
     tags: ['UI/UX', 'Next.js', 'Scss', 'Firebase'],
   },
-  {
-    id: 2,
-    title: 'Bingolfy',
-    img: '/Image.jpg',
-    tags: ['UI/UX', 'Next.js', 'Socket.io', 'NodeJS'],
-  },
+  // {
+  //   id: 2,
+  //   title: 'Bingolfy',
+  //   img: '/Image.jpg',
+  //   tags: ['UI/UX', 'Next.js', 'Socket.io', 'NodeJS'],
+  // },
   {
     id: 3,
     title: 'Vidyuth',
