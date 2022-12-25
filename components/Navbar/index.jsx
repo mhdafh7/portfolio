@@ -41,9 +41,6 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-      <div className={styles.mobileContainer}>
-        <h3>MENU</h3>
-      </div>
     </>
   );
 };
