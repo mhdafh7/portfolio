@@ -26,7 +26,6 @@ export default function Home() {
         smooth: true,
         getDirection: true,
       }}
-      watch={[]}
       containerRef={containerRef}
     >
       <Header />
