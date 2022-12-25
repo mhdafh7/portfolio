@@ -2,35 +2,35 @@
 @import '../../styles/fonts';
 
 .container {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    margin: auto;
-    padding-top: 7rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  padding-top: 7rem;
+  position: relative;
+
+  .title {
     position: relative;
+    text-align: center;
+    color: $text;
+    @include title(4rem, 2.2rem, 10vw, 12rem);
 
-    .title {
-        position: relative;
-        text-align: center;
-        color: $text;
-        @include title(4rem, 2.2rem, 10vw, 12rem);
-
-        &:last-of-type{
-            color: $accent-dark;
-        }
+    &:last-of-type {
+      color: $accent-dark;
     }
+  }
 }
 @media (max-width: $large) {
-    .container {
-        margin: auto 1rem;
-        padding-top: 5rem;
+  .container {
+    margin: auto 1rem;
+    padding-top: 5rem;
 
-        .title {
-            width: 90%;
-            text-align: center;
-        }
+    .title {
+      width: 90%;
+      text-align: center;
     }
+  }
 }

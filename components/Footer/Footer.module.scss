@@ -2,120 +2,120 @@
 @import '../../styles/fonts';
 
 .container {
-    background-color: $footer-bg;
-    color: $bg;
-    min-height: 100vh;
-    min-width: 100vw;
+  background-color: $footer-bg;
+  color: $bg;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0 7.5rem;
+  padding-bottom: 5rem;
+
+  span {
+    color: $accent-dark;
+  }
+
+  @media (max-width: $small) {
+    padding: 0;
+    padding-bottom: 3rem;
+  }
+  .title {
+    @include title(3rem, 2.2rem, 7vw, 12rem);
+    margin-top: 10rem;
+    text-align: center;
+  }
+
+  .cardAndLinks {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
-    padding: 0 7.5rem;
-    padding-bottom: 5rem;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 2rem;
 
-    span {
-        color: $accent-dark;
-    }
+    .card {
+      $cardPadding: 2.6rem;
+      height: 18rem;
+      max-height: 368px;
+      max-width: 644px;
+      aspect-ratio: 7/4;
+      border-radius: 23px;
+      background-color: $card-bg;
+      color: $bg;
+      padding: $cardPadding;
+      position: relative;
+      box-shadow: 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
+        0px 9px 46px 8px rgba(0, 0, 0, 0.12),
+        0px 11px 15px -7px rgba(0, 0, 0, 0.2);
+      cursor: grab;
 
-    @media (max-width: $small) {
-        padding: 0;
-        padding-bottom: 3rem;
-    }
-    .title {
-        @include title(3rem, 2.2rem, 7vw, 12rem);
-        margin-top: 10rem;
-        text-align: center;
-    }
+      &:active {
+        cursor: grabbing;
+      }
 
-    .cardAndLinks {
+      h4 {
+        position: absolute;
+        right: $cardPadding;
+        font-size: 0.8rem;
+        font-weight: 500;
+        letter-spacing: 0.09em;
+      }
+      .line1 {
+        position: absolute;
+        height: 5px;
+        width: 63%;
+        background-color: $bg;
+        top: 2.9em;
+        left: 0;
+        opacity: 0.3;
+      }
+      .line2 {
+        position: absolute;
+        height: 5px;
+        width: 6%;
+        background-color: $bg;
+        top: 2.9em;
+        right: 0;
+        opacity: 0.3;
+      }
+      .jobTitle {
+        top: $cardPadding;
+      }
+      .contactDetail {
+        top: calc(2 * $cardPadding);
+      }
+      .contactDetail:last-of-type {
+        top: calc(2.4 * $cardPadding);
+      }
+      h3 {
+        position: absolute;
+        bottom: $cardPadding;
+        left: $cardPadding;
+        font-size: 2rem;
+        line-height: 109%;
+        font-weight: 800;
+        letter-spacing: 0.055em;
+      }
+
+      @media (max-width: $small) {
+        scale: 0.7;
+      }
+    }
+    .links {
+      ul {
+        list-style: none;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
-        gap: 5rem;
-        margin-top: 2rem;
+        gap: 1.5rem;
 
-        .card {
-            $cardPadding: 2.6rem;
-            height: 18rem;
-            max-height: 368px;
-            max-width: 644px;
-            aspect-ratio: 7/4;
-            border-radius: 23px;
-            background-color: $card-bg;
-            color: $bg;
-            padding: $cardPadding;
-            position: relative;
-            box-shadow: 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
-                0px 9px 46px 8px rgba(0, 0, 0, 0.12),
-                0px 11px 15px -7px rgba(0, 0, 0, 0.2);
-            cursor: grab;
-
-            &:active {
-                cursor: grabbing;
-            }
-
-            h4 {
-                position: absolute;
-                right: $cardPadding;
-                font-size: 0.8rem;
-                font-weight: 500;
-                letter-spacing: 0.09em;
-            }
-            .line1 {
-                position: absolute;
-                height: 5px;
-                width: 63%;
-                background-color: $bg;
-                top: 2.9em;
-                left: 0;
-                opacity: 0.3;
-            }
-            .line2 {
-                position: absolute;
-                height: 5px;
-                width: 6%;
-                background-color: $bg;
-                top: 2.9em;
-                right: 0;
-                opacity: 0.3;
-            }
-            .jobTitle {
-                top: $cardPadding;
-            }
-            .contactDetail {
-                top: calc(2 * $cardPadding);
-            }
-            .contactDetail:last-of-type {
-                top: calc(2.4 * $cardPadding);
-            }
-            h3 {
-                position: absolute;
-                bottom: $cardPadding;
-                left: $cardPadding;
-                font-size: 2rem;
-                line-height: 109%;
-                font-weight: 800;
-                letter-spacing: 0.055em;
-            }
-
-            @media (max-width: $small) {
-                scale: 0.7;
-            }
+        li {
+          font-weight: 500;
         }
-        .links {
-            ul {
-                list-style: none;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 1.5rem;
-
-                li {
-                    font-weight: 500;
-                }
-            }
-        }
+      }
     }
+  }
 }

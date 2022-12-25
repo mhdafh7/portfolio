@@ -30,32 +30,32 @@ import { motion } from 'framer-motion';
 // }
 
 const Header = () => {
-    const { scroll } = useLocomotiveScroll();
-    const scrollToComponent = (e, target) => {
-        e.preventDefault();
-        scroll && scroll.scrollTo(target);
-    };
-    return (
-        <motion.header
-            className={styles.wrapper}
-            initial={{ y: '-10vh' }}
-            // animate={scrollDirection === 'down' ? { top: '-10vh' } : {}}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 1.7, duration: 0.7 }}
-        >
-            <div className={styles.container}>
-                <div className={styles.logo}>
-                    <h3
-                        onClick={(e) => {
-                            scrollToComponent(e, 0);
-                        }}
-                    >
-                        Mhdafh.
-                    </h3>
-                </div>
-                <Navbar />
-            </div>
-        </motion.header>
-    );
+  const { scroll } = useLocomotiveScroll();
+  const scrollToComponent = (e, target) => {
+    e.preventDefault();
+    scroll && scroll.scrollTo(target);
+  };
+  return (
+    <motion.header
+      className={styles.wrapper}
+      initial={{ y: '-10vh' }}
+      // animate={scrollDirection === 'down' ? { top: '-10vh' } : {}}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ delay: 1.7, duration: 0.7 }}
+    >
+      <div className={styles.container}>
+        <div className={styles.logo}>
+          <h3
+            onClick={(e) => {
+              scrollToComponent(e, 0);
+            }}
+          >
+            Mhdafh.
+          </h3>
+        </div>
+        <Navbar />
+      </div>
+    </motion.header>
+  );
 };
 export default Header;

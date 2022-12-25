@@ -2,63 +2,63 @@
 @import '../../styles/fonts';
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 30vh;
+  width: 100%;
+  color: $text;
+
+  .frameItem {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin: auto;
-    margin-top: 30vh;
+
+    span:last-of-type {
+      color: $accent-dark;
+    }
+    text-align: left;
+    @include title(3rem, 0.2rem, 8vw, 7rem);
+  }
+  .bio {
+    font-weight: 600;
+    font-size: clamp(1.7rem, 0.5rem + 3vw, 3.5rem);
+    line-height: 1.3;
+    text-align: justify;
     width: 100%;
-    color: $text;
+    max-width: 30ch;
+    margin: auto;
+    span {
+      color: $accent-dark;
+      display: inline-flex;
+    }
+  }
 
+  @media (max-width: $large) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  @media (max-width: $small) {
     .frameItem {
-        height: 100vh;
-        position: relative;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .title {
-        display: flex;
-        flex-direction: column;
-
-        span:last-of-type {
-            color: $accent-dark;
-        }
-        text-align: left;
-        @include title(3rem, 0.2rem, 8vw, 7rem);
-    }
-    .bio {
-        font-weight: 600;
-        font-size: clamp(1.7rem, 0.5rem + 3vw, 3.5rem);
-        line-height: 1.3;
+      height: auto;
+      .title {
+        text-align: center;
+      }
+      .bio {
+        line-height: 1.5;
         text-align: justify;
-        width: 100%;
-        max-width: 30ch;
-        margin: auto;
-        span {
-            color: $accent-dark;
-            display: inline-flex;
-        }
+      }
     }
-
-    @media (max-width: $large) {
-        flex-direction: column;
-        gap: 2rem;
-    }
-    @media (max-width: $small) {
-        .frameItem {
-            height: auto;
-            .title {
-                text-align: center;
-            }
-            .bio{
-                line-height: 1.5;
-                text-align: justify;
-            }
-        }
-        gap: 5rem;
-    }
+    gap: 5rem;
+  }
 }

@@ -2,88 +2,88 @@
 @import '../../styles/fonts';
 
 .container {
-    height: 60vw;
-    width: 100%;
+  height: 60vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border: none;
+
+  .about {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 1rem;
-    border: none;
+    flex: 1;
 
-    .about {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-        flex: 1;
+    .title {
+      font-size: clamp(1.6rem, 0.5rem + 5vw, 8rem);
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 2rem;
+    }
+    .tags {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      width: fit-content;
 
+      .tag {
+        font-size: clamp(0.5rem, 0.1rem + 3vw, 1rem);
+        margin: 0.2rem 0;
+        display: inline-block;
+        background-color: $text;
+        color: $bg;
+        border: $text 2px solid;
+        padding: 0.6em 1.4em;
+        border-radius: 34px;
+
+        h4 {
+          font-weight: 500;
+          letter-spacing: 1.5px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+      border-radius: 17px;
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width: $large) {
+    & {
+      width: 100%;
+      height: 90vw;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .about {
         .title {
-            font-size: clamp(1.6rem, 0.5rem + 5vw, 8rem);
-            font-weight: 600;
-            letter-spacing: 2px;
-            margin-bottom: 2rem;
+          margin-bottom: 0;
         }
         .tags {
-            display: flex;
-            gap: 0.6rem;
-            flex-wrap: wrap;
-            width: fit-content;
-
-            .tag {
-                font-size: clamp(0.5rem, 0.1rem + 3vw, 1rem);
-                margin: 0.2rem 0;
-                display: inline-block;
-                background-color: $text;
-                color: $bg;
-                border: $text 2px solid;
-                padding: 0.6em 1.4em;
-                border-radius: 34px;
-
-                h4 {
-                    font-weight: 500;
-                    letter-spacing: 1.5px;
-                    text-align: center;
-                }
-            }
+          margin-bottom: 1rem;
         }
-    }
-
-    .img {
-        position: relative;
+      }
+      .img {
         width: 100%;
         height: 100%;
-        width: 40vw;
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-
-        img {
-            border-radius: 17px;
-            object-fit: cover;
-        }
+      }
     }
-
-    @media (max-width: $large) {
-        & {
-            width: 100%;
-            height: 90vw;
-            flex-direction: column;
-            gap: 0.5rem;
-
-            .about {
-                .title {
-                    margin-bottom: 0;
-                }
-                .tags {
-                    margin-bottom: 1rem;
-                }
-            }
-            .img {
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
-    @media (max-width: $small) {
-        height: 70vh;
-    }
+  }
+  @media (max-width: $small) {
+    height: 70vh;
+  }
 }
