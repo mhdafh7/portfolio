@@ -3,8 +3,11 @@ import styles from './ProjectItem.module.scss';
 import { motion } from 'framer-motion';
 import AnimatedLetters from '../AnimatedLetters';
 import { variantParent, variantChild } from '../../constants/constants';
+import useWindowSize from '../../utils/windowResize';
 
 const ProjectItem = ({ title, img, tags }) => {
+  const windowSize = useWindowSize();
+  console.log(windowSize);
   return (
     <figure className={styles.container}>
       <div className={styles.about}>
@@ -31,16 +34,25 @@ const ProjectItem = ({ title, img, tags }) => {
         </motion.div>
       </div>
       <div className={styles.img}>
-        <Image
-          src={img}
-          layout="fixed"
-          width={700}
-          height={1400}
-          alt={title}
-          priority
-          data-scroll
-          data-scroll-speed="1"
-        />
+        {windowSize.width > 576 ? (
+          <Image
+            src={img}
+            layout="fixed"
+            width={700}
+            height={1200}
+            alt={title}
+            priority
+            data-scroll
+            data-scroll-speed="1"
+          />
+        ) : (
+          <Image
+            src={img}
+            layout="fill"
+            alt={title}
+            priority
+          />
+        )}
       </div>
     </figure>
   );
