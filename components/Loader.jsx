@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-const Loader = ({ setLoading }) => {
+const Loader = () => {
   return (
     <motion.section
       style={{
@@ -16,9 +16,6 @@ const Loader = ({ setLoading }) => {
       animate={{
         y: '-120vh',
         borderRadius: '0% 0% 50% 50% / 10% 10% 0% 0% ',
-      }}
-      onAnimationComplete={() => {
-        setLoading(false);
       }}
       transition={{
         ease: [0.6, 0.01, -0.05, 0.9],

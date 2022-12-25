@@ -6,14 +6,19 @@ import About from '../components/About';
 import Projects from '../components/Projects';
 import Footer from '../components/Footer';
 import Loader from '../components/Loader';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
 import { motion } from 'framer-motion';
 
 export default function Home() {
-  const [loading, setLoading] = useState(true);
-  // const [direction, setDirection] = useState("down")
+  const [loaded, setLoaded] = useState(true);
+
   const containerRef = useRef(null);
+  useEffect(() => {
+    window.addEventListener('load', () => {
+      setLoaded(true);
+    });
+  }, []);
 
   return (
     <LocomotiveScrollProvider
@@ -46,7 +51,7 @@ export default function Home() {
             href="/favicon.ico"
           />
         </Head>
-        {loading ? <Loader setLoading={setLoading} /> : null}
+        {loaded ? <Loader /> : null}
 
         <motion.main className={styles.main}>
           <Hero data-scroll-section />
