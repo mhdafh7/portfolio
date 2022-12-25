@@ -25,6 +25,16 @@ export default function Home() {
       options={{
         smooth: true,
         getDirection: true,
+        mobile: {
+          breakpoint: 0,
+          smooth: false,
+          getDirection: true,
+        },
+        tablet: {
+          breakpoint: 0,
+          smooth: false,
+          getDirection: true,
+        },
       }}
       watch={[]}
       containerRef={containerRef}
