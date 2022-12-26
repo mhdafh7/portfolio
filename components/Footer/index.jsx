@@ -1,6 +1,46 @@
 import styles from './Footer.module.scss';
 import { motion } from 'framer-motion';
 
+const ListItem = ({ title, url }) => {
+  return (
+    <motion.li
+      whileHover={{ scale: 1.1, textDecoration: 'underline' }}
+      transition={{ duration: 0.3, ease: 'easeIn' }}
+    >
+      <a
+        href={url}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {title}
+      </a>
+    </motion.li>
+  );
+};
+
+const urlList = [
+  {
+    id: 1,
+    title: 'Linkedin',
+    url: 'https://www.linkedin.com/in/muhammed-aflah',
+  },
+  {
+    id: 2,
+    title: 'Github',
+    url: 'https://github.com/mhdafh7',
+  },
+  {
+    id: 3,
+    title: 'Showwcase',
+    url: 'https://www.showwcase.com/mhdafh',
+  },
+  {
+    id: 4,
+    title: 'Resume',
+    url: 'https://drive.google.com/file/d/1qkae_X192lXVY6kS3DPj06Cfvelpbj6C/view?usp=drivesdk',
+  },
+];
+
 const Footer = () => {
   return (
     <footer
@@ -36,33 +76,15 @@ const Footer = () => {
         </motion.div>
         <div className={styles.links}>
           <ul>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/muhammed-aflah"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Linkedin
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/mhdafh7"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Github
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://drive.google.com/file/d/1qkae_X192lXVY6kS3DPj06Cfvelpbj6C/view?usp=drivesdk"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Resume
-              </a>
-            </li>
+            {urlList.map(({ id, title, url }) => {
+              return (
+                <ListItem
+                  url={url}
+                  title={title}
+                  key={id}
+                />
+              );
+            })}
           </ul>
         </div>
       </div>
