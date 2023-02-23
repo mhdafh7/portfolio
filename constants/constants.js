@@ -7,12 +7,6 @@ export const projectItems = [
   },
   {
     id: 2,
-    title: 'Bingolfy',
-    img: '/Image.jpg',
-    tags: ['UI/UX', 'Next.js', 'Socket.io', 'NodeJS'],
-  },
-  {
-    id: 3,
     title: 'Vidyuth',
     img: '/Image.jpg',
     tags: ['UI/UX', 'Next.js', 'Scss'],
