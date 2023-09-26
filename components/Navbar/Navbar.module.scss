@@ -17,13 +17,21 @@
     .navItem {
       font-weight: bold;
       cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        scale: 1.1;
+      }
     }
     .contact {
-      background-color: $accent-dark;
+      background-color: $accent;
       color: $bg;
       border-radius: 20px;
-      padding-block: 0.6rem;
-      padding-inline: 1rem;
+      width: 6rem;
+      height: 2.5rem;
     }
   }
 
