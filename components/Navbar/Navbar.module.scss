@@ -1,5 +1,5 @@
-@import '../../styles/constants';
-@import '../../styles/fonts';
+@import "../../styles/constants";
+@import "../../styles/fonts";
 
 .container {
   display: flex;
@@ -33,17 +33,4 @@
 }
 .mobileContainer {
   display: none;
-
-  @media (max-width: $large) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-    flex-direction: column;
-    height: clamp(35px, 7vw, 60px);
-    width: clamp(35px, 7vw, 60px);
-    cursor: pointer;
-    text-decoration: line-through;
-    cursor: not-allowed;
-  }
 }
