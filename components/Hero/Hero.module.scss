@@ -19,7 +19,7 @@
     @include title(4rem, 2.2rem, 10vw, 12rem);
 
     &:last-of-type {
-      color: $accent-dark;
+      color: $accent;
     }
   }
 }

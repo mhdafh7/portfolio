@@ -25,7 +25,7 @@
     flex-direction: column;
 
     span:last-of-type {
-      color: $accent-dark;
+      color: $accent;
     }
     text-align: left;
     @include title(3rem, 0.2rem, 8vw, 7rem);
@@ -39,7 +39,7 @@
     max-width: 30ch;
     margin: auto;
     span {
-      color: $accent-dark;
+      color: $accent;
       display: inline-flex;
     }
   }

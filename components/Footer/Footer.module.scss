@@ -2,7 +2,7 @@
 @import '../../styles/fonts';
 
 .container {
-  background-color: $footer-bg;
+  background-color: $accent-dark;
   color: $bg;
   min-height: 100vh;
   min-width: 100vw;
@@ -67,19 +67,17 @@
         position: absolute;
         height: 5px;
         width: 63%;
-        background-color: $bg;
+        background-color: $accent;
         top: 2.9em;
         left: 0;
-        opacity: 0.3;
       }
       .line2 {
         position: absolute;
         height: 5px;
         width: 6%;
-        background-color: $bg;
+        background-color: $accent;
         top: 2.9em;
         right: 0;
-        opacity: 0.3;
       }
       .jobTitle {
         top: $cardPadding;
