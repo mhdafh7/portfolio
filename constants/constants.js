@@ -2,13 +2,17 @@ export const projectItems = [
   {
     id: 1,
     title: "Noteey",
-    img: "/Image.jpg",
+    img: "/black-yellow-bg.svg",
+    code: "https://github.com/mhdafh7/noteey",
+    deployed: "https://noteey.vercel.app",
     tags: ["Next.js", "Typescript", "Prisma", "PostgreSQL", "Scss"],
   },
   {
     id: 2,
     title: "Miniposts",
-    img: "/Image.jpg",
+    img: "/black-yellow-bg.svg",
+    code: "https://github.com/mhdafh7/miniposts",
+    deployed: "https://miniposts-client.vercel.app/",
     tags: ["React.js", "Express", "MongoDB", "Node.js", "Tailwindcss"],
   },
 ];
