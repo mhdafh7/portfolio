@@ -54,7 +54,9 @@ const ProjectItem = ({ title, img, tags, deployedLink, codeLink }) => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        {hovered.hovered ? <Hover /> : null}
+        {hovered.hovered ? (
+          <Hover codeLink={codeLink} deployedLink={deployedLink} />
+        ) : null}
         <Image
           src={img}
           layout="fixed"
