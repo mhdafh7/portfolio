@@ -1,20 +1,22 @@
 export const projectItems = [
   {
     id: 1,
-    title: 'Noteey',
-    img: '/Image.jpg',
-    tags: ['UI/UX', 'Next.js', 'Scss', 'Firebase'],
+    title: "Noteey",
+    img: "/Image.jpg",
+    tags: ["Next.js", "Typescript", "Prisma", "PostgreSQL", "Scss"],
   },
   {
     id: 2,
-    title: 'Vidyuth',
-    img: '/Image.jpg',
-    tags: ['UI/UX', 'Next.js', 'Scss'],
+    title: "Miniposts",
+    img: "/Image.jpg",
+    tags: ["React.js", "Express", "MongoDB", "Node.js", "Tailwindcss"],
   },
 ];
+
+// Animation constants
 export const variants = {
-  offscreen: { filter: 'blur(10px)', opacity: 0.05, y: -30 },
-  onscreen: { filter: 'blur(0px)', opacity: 1, y: 0 },
+  offscreen: { filter: "blur(10px)", opacity: 0.05, y: -30 },
+  onscreen: { filter: "blur(0px)", opacity: 1, y: 0 },
 };
 
 export const variantParent = {
@@ -30,7 +32,7 @@ export const variantChild = {
     opacity: 1,
     y: 0,
     transition: {
-      type: 'spring',
+      type: "spring",
       damping: 12,
       stiffness: 200,
     },
@@ -39,7 +41,7 @@ export const variantChild = {
     opacity: 0,
     y: 20,
     transition: {
-      type: 'spring',
+      type: "spring",
       damping: 12,
       stiffness: 200,
     },
