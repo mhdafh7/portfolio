@@ -46,6 +46,8 @@ const Projects = () => {
               title={item.title}
               img={item.img}
               tags={item.tags}
+              codeLink={item.code}
+              deployedLink={item.deployed}
             />
           );
         })}
