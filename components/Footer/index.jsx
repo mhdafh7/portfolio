@@ -1,17 +1,10 @@
-import styles from './Footer.module.scss';
-import { motion } from 'framer-motion';
+import styles from "./Footer.module.scss";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer
-      className={styles.container}
-      id="Contact"
-    >
-      <motion.h3
-        className={styles.title}
-        data-scroll
-        data-scroll-speed="-3"
-      >
+    <footer className={styles.container} id="Contact">
+      <motion.h3 className={styles.title} data-scroll data-scroll-speed="-3">
         Get in touch<span>.</span>
       </motion.h3>
       <div className={styles.cardAndLinks}>
@@ -28,8 +21,8 @@ const Footer = () => {
           <div className={styles.line1}></div>
           <div className={styles.line2}></div>
           <h4 className={styles.jobTitle}>Full stack developer.</h4>
-          <h4 className={styles.contactDetail}>mhdaflah@tuta.io</h4>
-          <h4 className={styles.contactDetail}>+91 701 283 2060</h4>
+          <h4 className={styles.contactDetail}>m.aflah@proton.me</h4>
+          <h4 className={styles.placeholder}>----------------</h4>
           <h3>
             Muhammed <br /> Aflah.
           </h3>

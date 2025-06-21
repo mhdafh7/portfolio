@@ -1,5 +1,5 @@
-@import '../../styles/constants';
-@import '../../styles/fonts';
+@import "../../styles/constants";
+@import "../../styles/fonts";
 
 .container {
   background-color: $accent-dark;
@@ -85,8 +85,10 @@
       .contactDetail {
         top: calc(2 * $cardPadding);
       }
-      .contactDetail:last-of-type {
+      .placeholder {
         top: calc(2.4 * $cardPadding);
+        visibility: hidden;
+        opacity: 0;
       }
       h3 {
         position: absolute;

@@ -8,11 +8,11 @@
   width: 100%;
 
   ul {
-    width: clamp(424px, 60%, 25vw);
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 3rem;
 
     .navItem {
       font-weight: bold;
@@ -28,7 +28,7 @@
     }
     .contact {
       background-color: $accent;
-      color: $text;
+      color: $bg;
       border-radius: 20px;
       width: 6rem;
       height: 2.5rem;

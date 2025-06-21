@@ -1,5 +1,5 @@
-import styles from './Navbar.module.scss';
-import { useLocomotiveScroll } from 'react-locomotive-scroll';
+import styles from "./Navbar.module.scss";
+import { useLocomotiveScroll } from "react-locomotive-scroll";
 
 const Navbar = () => {
   const { scroll } = useLocomotiveScroll();
@@ -17,24 +17,15 @@ const Navbar = () => {
           <li
             className={styles.navItem}
             onClick={(e) => {
-              scrollToComponent(e, '#About');
+              scrollToComponent(e, "#About");
             }}
           >
             About
           </li>
-
-          <li
-            className={styles.navItem}
-            onClick={(e) => {
-              scrollToComponent(e, '#Projects', -100);
-            }}
-          >
-            Projects
-          </li>
           <li
             className={`${styles.navItem} ${styles.contact}`}
             onClick={(e) => {
-              scrollToComponent(e, '#Contact');
+              scrollToComponent(e, "#Contact");
             }}
           >
             Contact
