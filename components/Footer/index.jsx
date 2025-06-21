@@ -49,7 +49,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://drive.google.com/file/d/1qkae_X192lXVY6kS3DPj06Cfvelpbj6C/view?usp=drivesdk"
+                href="https://docs.google.com/document/d/1zTI9Xv18q7IhKMqcN1mai9nMI64uA3G0G62LylRp230/edit?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
